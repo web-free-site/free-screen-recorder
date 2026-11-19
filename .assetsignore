@@ -1,0 +1,9 @@
+AGENT_BRIEF.md
+wrangler.toml
+.git/
+.gitignore
+scripts/
+fragments/
+node_modules/
+package.json
+package-lock.json
