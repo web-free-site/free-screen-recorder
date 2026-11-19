@@ -1,0 +1,9 @@
+{
+  "name": "free-screen-recorder",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/smoke-test.mjs && node scripts/browser-test.mjs",
+    "test:smoke": "node scripts/smoke-test.mjs",
+    "build:pages": "node scripts/build-static-pages.mjs"
+  }
+}

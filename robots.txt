@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://free-screen-recorder.web-free.site/sitemap.xml
