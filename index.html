@@ -11,8 +11,9 @@
   <link rel="alternate" hreflang="en" href="https://free-screen-recorder.web-free.site/" />
   <link rel="alternate" hreflang="x-default" href="https://free-screen-recorder.web-free.site/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Free Screen Recorder" />
-  <meta property="og:description" content="Capture screen and mic, trim clips, add titles, and export WebM without uploading video." />
+  <meta property="og:site_name" content="Free Screen Recorder" />
+  <meta property="og:title" content="Free Screen Recorder — Record, Trim &amp; Export in Your Browser" />
+  <meta property="og:description" content="Free screen recorder with mic, webcam PiP, trim, and title cards. No signup, no upload, no watermark. Export WebM in your browser." />
   <meta property="og:url" content="https://free-screen-recorder.web-free.site/" />
   <meta property="og:image" content="https://free-screen-recorder.web-free.site/screenshot.png" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -77,6 +78,14 @@
             "@type": "Answer",
             "text": "Layout works at mobile widths, but most phones block full screen capture in the browser. Use desktop for recording."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I trim clips and export one WebM file?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Record multiple segments, trim and reorder them, add optional title cards, then export a single WebM file rendered entirely in your browser."
+          }
         }
       ]
     }
@@ -104,6 +113,7 @@
       </div>
       <div class="ad-header-slot"><div data-ad-slot="header728x90" data-ad-label="Sponsored"></div></div>
     </header>
+    <h1 class="site-hero-title">Free Screen Recorder</h1>
     <p class="site-intro">No accounts, no uploads, no watermark. Export is WebM only (in-browser MediaRecorder). Works best in Chromium on desktop.</p>
     <div class="site-layout">
       <div class="site-main-col">
@@ -235,9 +245,90 @@
           <div data-ad-slot="content300x250" data-ad-label="Sponsored"></div>
         </div>
         <div data-ad-slot="nativeBelowResult" data-ad-label="Sponsored"></div>
+        <section class="site-home-seo site-page" aria-labelledby="home-seo-heading">
+          <div class="prose">
+            <h2 id="home-seo-heading">Browser screen recording without installing software</h2>
+            <p>
+              <strong>Free Screen Recorder</strong> is a no-sign-up screen recorder that runs entirely in your web browser.
+              You capture your display and microphone, optionally add a webcam picture-in-picture overlay, trim and reorder clips,
+              insert title cards, and download one finished <strong>WebM</strong> video. There is no account wall, no time limit,
+              and no watermark burned into your export. The editor and exporter use standard web APIs—screen capture,
+              <code>MediaRecorder</code>, and canvas rendering—so your footage stays on your computer unless you choose to share it elsewhere.
+            </p>
+            <p>
+              This tool is part of the
+              <a href="https://web-free.site/?ref=free-screen-recorder">Web Free</a> collection of privacy-minded utilities.
+              For a longer walkthrough with tips on permissions and microphone levels, see the hub guide
+              <a href="https://web-free.site/guides/record-screen-with-microphone-no-watermark/?ref=free-screen-recorder">Record your screen with microphone and no watermark</a>.
+              On-site how-tos also cover
+              <a href="/how-to-record-your-screen-in-the-browser/">recording in the browser</a> and
+              <a href="/how-to-record-your-screen-with-a-webcam/">using webcam PiP</a>.
+            </p>
+
+            <h3>How to use this free screen recorder (step by step)</h3>
+            <ol>
+              <li>
+                <strong>Start screen + mic.</strong> Click <em>Start Screen + Mic</em> and pick the window, tab, or full screen
+                the browser is allowed to capture. Grant microphone access when prompted so narration is included in the mix.
+              </li>
+              <li>
+                <strong>Record clips.</strong> With capture running, press <em>Start Clip</em> for each segment you want in the final
+                video. Stop the clip when that segment is done. You can record several takes without restarting capture.
+              </li>
+              <li>
+                <strong>Optional webcam PiP.</strong> Use <em>Webcam PiP</em> to float a small camera feed over the screen capture—handy for
+                tutorials, stand-ups, and course videos. Adjust the mic offset control if audio and picture feel slightly out of sync.
+              </li>
+              <li>
+                <strong>Edit the timeline.</strong> Trim clip in and out points, drag clips to reorder them, and add title blocks with
+                custom background images. You can also import existing video files or reload a saved JSON project from disk.
+              </li>
+              <li>
+                <strong>Export WebM.</strong> When the timeline looks right, choose <em>Export Final Video</em>. The app renders locally,
+                shows progress, and offers a download link. Share or edit the WebM in another app if you need MP4 or another format.
+              </li>
+            </ol>
+
+            <h3>Privacy and in-browser processing</h3>
+            <p>
+              Screen recording tools that upload to a cloud encoder may be convenient, but they also copy sensitive UI, credentials,
+              and personal audio to someone else’s servers. Here, capture, preview, trimming, concatenation, and export happen in the tab.
+              Project saves download as a file on your device; we do not operate a backend that receives your recordings.
+              Like any website, this page may load ads and anonymous analytics tags, but those services are separate from the recorder
+              pipeline—your video bytes are not sent to us for encoding. Use a secure context (HTTPS) as required by browser capture APIs.
+            </p>
+
+            <h3>Popular use cases</h3>
+            <ul>
+              <li><strong>Software tutorials</strong> — Show a product workflow with voice-over and optional face cam via PiP.</li>
+              <li><strong>Bug reports</strong> — Capture reproduction steps for engineering tickets without installing OBS.</li>
+              <li><strong>Short training clips</strong> — Record chapterized clips, trim mistakes, and export one file for LMS upload.</li>
+              <li><strong>Meeting highlights</strong> — Grab a tab or window segment with mic commentary for async teammates.</li>
+              <li><strong>Content drafts</strong> — Record rough takes and title sections before heavier editing elsewhere.</li>
+            </ul>
+            <p>
+              Chromium-based browsers on desktop offer the most reliable capture, PiP, and export. Safari and Firefox vary;
+              if export fails, try Chromium or see the <a href="/about/">about page</a>. Most phones block full screen capture—use a desktop for recording.
+            </p>
+
+            <h3 id="home-faq">Frequently asked questions</h3>
+            <dl class="site-faq">
+              <dt>Is Free Screen Recorder really free?</dt>
+              <dd>Yes. There is no subscription, watermark, or time limit. Export stays in your browser as WebM.</dd>
+              <dt>Does my video get uploaded?</dt>
+              <dd>No. Capture, editing, and export run locally. Project files download as JSON on your device only.</dd>
+              <dt>Which browsers work best?</dt>
+              <dd>Modern Chromium browsers on desktop are recommended. Safari and Firefox may lack full export or PiP support.</dd>
+              <dt>Can I record on my phone?</dt>
+              <dd>Layout works at mobile widths, but most phones block full screen capture in the browser. Use desktop for recording.</dd>
+              <dt>Can I trim clips and export one WebM file?</dt>
+              <dd>Yes. Record multiple segments, trim and reorder them, add optional title cards, then export a single WebM file rendered entirely in your browser.</dd>
+            </dl>
+          </div>
+        </section>
         <footer class="site-footer">
           <p>
-            <a href="https://web-free.site/">web-free.site</a>
+            <a href="https://web-free.site/?ref=free-screen-recorder">web-free.site</a>
             · Based on <a href="https://github.com/mmiscool/screencap.me" rel="noopener noreferrer">screencap.me</a> (MIT, Mike)
             · <span data-ad-smartlink></span>
           </p>
